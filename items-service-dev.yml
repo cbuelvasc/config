@@ -1,8 +1,9 @@
-#spring:
-  #application:
-  #  name: items-service
-  #config:
-  #  import: "optional:configserver:"
+spring:
+  application:
+    name: items-service
+  output:
+    ansi:
+      console-available: true  
 
 server:
   #port: ${PORT:0}
@@ -10,6 +11,10 @@ server:
 
 eureka:
   client:
+    enabled: true
+    healthcheck:
+      enabled: false
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
   instance:
