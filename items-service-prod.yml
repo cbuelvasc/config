@@ -5,6 +5,7 @@
   #  import: "optional:configserver:"
 
 server:
+  #port: 9090
   port: ${PORT:0}
 
 eureka:

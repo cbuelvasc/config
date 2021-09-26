@@ -5,7 +5,8 @@
   #  import: "optional:configserver:"
 
 server:
-  port: ${PORT:0}
+  #port: ${PORT:0}
+  port: 8080
 
 eureka:
   client:
