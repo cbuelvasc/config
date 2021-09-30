@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://microservicios-postgres12:5432/db_springboot_cloud'
+    username: postgres
+    password: sasa
+    driver-class-name: 'org.postgresql.Driver'
+  jpa:
+    database-platform: 'org.hibernate.dialect.PostgreSQL95Dialect'
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        formatSql: true
+        jdbc:
+          lob:
+            non-contextual-creation: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG    
